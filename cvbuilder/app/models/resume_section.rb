@@ -1,3 +1,3 @@
 class ResumeSection < ActiveRecord::Base
-  attr_accessible :content, :title
+  belongs_to :resume 
 end

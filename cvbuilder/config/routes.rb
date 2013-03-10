@@ -1,6 +1,7 @@
 Cvbuilder::Application.routes.draw do
-  resources :resume_sections
-
+  resources :resumes do
+    resources :sections, controller: "resume_sections"
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

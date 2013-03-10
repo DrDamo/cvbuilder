@@ -1,6 +1,7 @@
 %h1 Editing resume_section
 
-= render 'form'
+= form_for @resume_section do url: resume_section_path(@resume, @resume_section) |f|
+  = render 'form' f: f
 
 = link_to 'Show', @resume_section
 \|
