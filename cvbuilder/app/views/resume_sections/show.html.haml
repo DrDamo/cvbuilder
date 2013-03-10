@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @resume_section.title
+%p
+  %b Content:
+  = @resume_section.content
+
+= link_to 'Edit', edit_resume_section_path(@resume_section)
+\|
+= link_to 'Back', resume_sections_path
